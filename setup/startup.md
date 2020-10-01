@@ -154,6 +154,8 @@ Move nozzle to the center of the bed and approximately 5-10mm above the bed surf
 
 It will perform a PID calibration routine that will last about 10 minutes. Once it is finished, type `SAVE_CONFIG` which will save the parameters into your configuration file.
 
+If you find you have bed temperature fluctuations when you start printing, this may indicate you need to re-run the PID calibration to account for the higher ambient temperature within the printer.
+
 ### PID Tune Hotend
 
 Set the part cooling fans to 25% (`M106 S64`) and then run: 
@@ -207,7 +209,7 @@ Once the readings are stable, run `Z_TILT` or `QUAD_GANTRY_LEVEL`.  Make a note 
 
 #### Common QGL Problems
 
-* If the QGL is having issues with too high of a standard deviation and the printer is heated and stable, check Z belt tension.  Make sure they are reasonably tight and even.
+* If the QGL is having issues with too high of a standard deviation and the printer is heated and stable, check Z belt tension.  Make sure they are reasonably tight and even. Guidance can be found in the Voron Discord on how to use a sound spectrum analyser to help with this.
 * If QGL fails with being unable to reach the probe in time, do a `FIRMWARE_RESTART`, manually level the bed as closely as possible, then home (`G28`) and re-attempt.
 
 ### Bed Mesh Only (Switchwire)
