@@ -209,7 +209,7 @@ Once the readings are stable, run `Z_TILT` or `QUAD_GANTRY_LEVEL`.  Make a note 
 
 #### Common QGL Problems
 
-* If the QGL is having issues with too high of a standard deviation and the printer is heated and stable, check Z belt tension.  Make sure they are reasonably tight and even. Guidance can be found in the Voron Discord on how to use a sound spectrum analyser to help with this.
+* If the QGL is having issues with too high of a standard deviation and the printer is heated and stable, check Z belt tension.  Make sure they are reasonably tight and even.
 * If QGL fails with being unable to reach the probe in time, do a `FIRMWARE_RESTART`, manually level the bed as closely as possible, then home (`G28`) and re-attempt.
 
 ### Bed Mesh Only (Switchwire)
